@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    @include('includes.head')
-</head>
-<body class="bg-gray-500">
+<html lang="nl">
+@include('includes.head')
 
-{{-- <header class="container mx-auto px-5">
-  @include('includes.header')
-</header> --}}
+<body class="bg-white">
 
-{{-- @include('includes.header') --}}
+    @include('includes.nav', ['personal' => true])
 
-<main>
-    @yield('content')
-</main>
+    <main>
+        @yield('content')
+    </main>
 
-{{-- <footer class="container mx-auto px-5">
-  @include('includes.footer')
-</footer> --}}
-
-{{-- @include('includes.footer') --}}
+    @include('includes.footer')
 
 </body>
 </html>

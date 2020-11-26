@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    @include('includes.head')
-</head>
-<body class="bg-gray-500">
+@include('includes.head')
 
-    @include('includes.nav')
+<body class="bg-white">
+
+    @include('includes.nav', ['personal' => false])
 
     <main>
         @yield('content')
