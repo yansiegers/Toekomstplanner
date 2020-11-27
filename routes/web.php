@@ -15,17 +15,11 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', [PageController::class, 'show'])->defaults('view', 'home');
-//Route::get('/dasboard', [PageController::class, 'show'])->defaults('view', 'dashboard');
-
-//Route::get('/', function () {
-//    return view('pages.home');
-//})->name('home');
+Route::get('/', [PageController::class, 'show'])->defaults('id', 1)->name('home');
 
 Route::get('/dashboard', function () {
     return view('pages.dashboard');
 })->name('dashboard');
-
 
 Route::resource('exercises', ExerciseController::class)->only([
     'index', 'show'
