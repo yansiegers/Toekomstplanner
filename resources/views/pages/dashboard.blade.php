@@ -13,19 +13,19 @@
 
             <span class="font-bold">Mijn jaarplan</span>
             <span class="text-center">Niet gestart</span>
-            <button class="text-center border">Starten</button>
+            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Starten</a>
 
             <span class="font-bold">Ikigai</span>
             <span class="text-center">20%</span>
-            <button class="text-center border">Verder</button>
+            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Verder</a>
 
             <span class="font-bold">Wie ben ik?</span>
             <span class="text-center">60%</span>
-            <button class="text-center border">Verder</button>
+            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Verder</a>
 
             <span class="font-bold">Noordster</span>
             <span class="text-center">99%</span>
-            <button class="text-center border">Verder</button>
+            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Verder</a>
         </section>
 
         <section class="col-span-full grid grid-cols-3 gap-y-2 mb-16">
@@ -36,14 +36,14 @@
                 <img class="inline" src="assets/icons/outline/collection.svg" alt="">
                 Toekomst
             </span>
-            <button class="text-center border">Bekijken</button>
+            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Bekijken</a>
 
             <span class="font-bold">3 MIP</span>
             <span class="">
                 <img class="inline" src="assets/icons/outline/collection.svg" alt="">
                 Jezelf
             </span>
-            <button class="text-center border">Bekijken</button>
+            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Bekijken</a>
         </section>
 
         <button class="col-span-4 col-start-2 text-center border">Accountinstellingen</button>
