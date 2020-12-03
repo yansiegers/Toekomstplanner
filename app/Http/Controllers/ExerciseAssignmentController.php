@@ -8,24 +8,21 @@ class ExerciseAssignmentController extends Controller
 {
     public function index($exercise_id)
     {
-//        $exercise_results = ExerciseResult::all()->where('exercise', $exercise_id);
         $exercise_assignments = DB::table('exercise_results')->where('exercise_id', $exercise_id)->get();
 
         return view('private.exercise.assignment.index', [
+            'exercise_id' => $exercise_id,
             'exercise_assignments' => $exercise_assignments
         ]);
     }
 
-//    /**
-//     * Show the exercise information for the given exercise.
-//     *
-//     * @param int $id
-//     * @return Application|View
-//     */
-//    public function show(int $id)
-//    {
-//        return view('private.exercise_results.show', [
-//            'exercise_intro' => Exercise::findOrFail($id)->exercise_intro
-//        ]);
-//    }
+    public function show($exercise_id, $id)
+    {
+        $exercise_assignment = DB::table('exercise_results')->find($id);
+
+        return view('private.exercise.assignment.show', [
+            'exercise_id' => $exercise_id,
+            'exercise_assignment' => $exercise_assignment
+        ]);
+    }
 }

@@ -13,11 +13,19 @@
         </section>
 
         <section class="col-span-4 col-start-2">
-            @foreach ($exercise_assignments as $exercise_assignment)
-                <h2>{{ $exercise_assignment->question }}</h2>
-                <p>{{ $exercise_assignment->answer }}</p>
-            @endforeach
+            <h2>Vragen</h2>
+            <ol>
+                @foreach ($exercise_assignments as $exercise_assignment)
+                    <li>
+                        <a href="{{ action('App\Http\Controllers\ExerciseAssignmentController@show', [$exercise_id, $exercise_assignment->id]) }}">
+                            {{ $exercise_assignment->question }}
+                            @if($exercise_assignment->answer)
+                                <span>(beantwoord)</span>
+                            @endif
+                        </a>
+                    </li>
+                @endforeach
+            </ol>
         </section>
-
     </div>
 @stop

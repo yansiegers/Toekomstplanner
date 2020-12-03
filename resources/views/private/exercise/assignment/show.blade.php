@@ -1,5 +1,5 @@
 @php
-    $page_title = 'Oefening resultaten'
+    $page_title = 'Oefeningvraag invullen'
 @endphp
 
 @extends('layouts.personal', [
@@ -12,12 +12,9 @@
             <h1 class="text-xl text-center font-bold mt-5">{{ $page_title }}</h1>
         </section>
 
-        @foreach ($exercise_results as $exercise_result)
-            <section class="col-span-4 col-start-2">
-                <h2>{{ $exercise_result->question }}</h2>
-                <p>{{ $exercise_result->answer }}</p>
-            </section>
-        @endforeach
-
+        <section class="col-span-4 col-start-2">
+            <h2>{{ $exercise_assignment->question }}</h2>
+            <p>{{ $exercise_assignment->answer }}</p>
+        </section>
     </div>
 @stop
