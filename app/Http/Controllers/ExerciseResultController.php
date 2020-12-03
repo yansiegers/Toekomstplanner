@@ -11,7 +11,7 @@ class ExerciseResultController extends Controller
 //        $exercise_results = ExerciseResult::all()->where('exercise', $exercise_id);
         $exercise_results = DB::table('exercise_results')->where('exercise_id', $exercise_id)->get();
 
-        return view('private.exercise_results.index', [
+        return view('private.exercise.result.index', [
             'exercise_results' => $exercise_results
         ]);
     }

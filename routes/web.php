@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ExerciseController;
 use App\Http\Controllers\ExerciseResultController;
+use App\Http\Controllers\ExerciseAssignmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,8 @@ Route::resource('oefeningen', ExerciseController::class)->only([
     'index', 'show'
 ]);
 
-Route::resource('oefeningen.invullen', ExerciseResultController::class);
+Route::resource('oefeningen.invullen', ExerciseAssignmentController::class);
+Route::resource('oefeningen.resultaten', ExerciseResultController::class);
 
 //<a href="{{ action('App\Http\Controllers\ProjectController@show', [$project->id]) }}">
 //    {{ $project->title }}

@@ -9,10 +9,10 @@ class ExerciseAssignmentController extends Controller
     public function index($exercise_id)
     {
 //        $exercise_results = ExerciseResult::all()->where('exercise', $exercise_id);
-        $exercise_results = DB::table('exercise_results')->where('exercise_id', $exercise_id)->get();
+        $exercise_assignments = DB::table('exercise_results')->where('exercise_id', $exercise_id)->get();
 
-        return view('private.exercise_results.index', [
-            'exercise_results' => $exercise_results
+        return view('private.exercise.assignment.index', [
+            'exercise_assignments' => $exercise_assignments
         ]);
     }
 

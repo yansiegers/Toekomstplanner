@@ -13,19 +13,19 @@
 
             <span class="font-bold">Mijn jaarplan</span>
             <span class="text-center">Niet gestart</span>
-            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Starten</a>
+            <a href="{{ action('App\Http\Controllers\ExerciseAssignmentController@index', [1]) }}" class="text-center border">Starten</a>
 
             <span class="font-bold">Ikigai</span>
             <span class="text-center">20%</span>
-            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Verder</a>
+            <a href="{{ action('App\Http\Controllers\ExerciseAssignmentController@index', [1]) }}" class="text-center border">Verder</a>
 
             <span class="font-bold">Wie ben ik?</span>
             <span class="text-center">60%</span>
-            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Verder</a>
+            <a href="{{ action('App\Http\Controllers\ExerciseAssignmentController@index', [1]) }}" class="text-center border">Verder</a>
 
             <span class="font-bold">Noordster</span>
             <span class="text-center">99%</span>
-            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Verder</a>
+            <a href="{{ action('App\Http\Controllers\ExerciseAssignmentController@index', [1]) }}" class="text-center border">Verder</a>
         </section>
 
         <section class="col-span-full grid grid-cols-3 gap-y-2 mb-16">
@@ -36,14 +36,14 @@
                 <img class="inline" src="assets/icons/outline/collection.svg" alt="">
                 Toekomst
             </span>
-            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Bekijken</a>
+            <a href="{{ action('App\Http\Controllers\ExerciseResultController@index', [1]) }}" class="text-center border">Bekijken</a>
 
             <span class="font-bold">3 MIP</span>
             <span class="">
                 <img class="inline" src="assets/icons/outline/collection.svg" alt="">
                 Jezelf
             </span>
-            <a href="{{ action('App\Http\Controllers\ExerciseController@show', [1]) }}" class="text-center border">Bekijken</a>
+            <a href="{{ action('App\Http\Controllers\ExerciseResultController@index', [1]) }}" class="text-center border">Bekijken</a>
         </section>
 
         <button class="col-span-4 col-start-2 text-center border">Accountinstellingen</button>

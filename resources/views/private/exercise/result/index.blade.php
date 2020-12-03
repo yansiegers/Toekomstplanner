@@ -1,5 +1,5 @@
 @php
-    $page_title = 'Oefening invullen'
+    $page_title = 'Oefening resultaten'
 @endphp
 
 @extends('layouts.personal', [
