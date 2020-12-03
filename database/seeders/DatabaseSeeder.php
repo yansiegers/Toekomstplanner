@@ -57,5 +57,23 @@ Ut gravida elementum ligula. Vestibulum dictum justo ligula, sit amet egestas es
             'duration' => rand(1, 60),
             'difficulty' => 'medium',
         ]);
+
+        DB::table('exercise_results')->insert([
+            'exercise_id' => 1,
+            'question' => 'vraag_1',
+            'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit mauris ex, sit amet fermentum est tincidunt aliquet. Maecenas feugiat, tellus vitae consectetur facilisis, augue eros luctus quam, vitae rhoncus dui quam non tortor. Aliquam ullamcorper placerat viverra. Proin pulvinar leo enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis vel leo a dictum. Nullam non lobortis nibh. Aenean enim mi, efficitur et pharetra ac, tristique auctor elit.',
+        ]);
+
+        DB::table('exercise_results')->insert([
+            'exercise_id' => 1,
+            'question' => 'vraag_2',
+            'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit mauris ex, sit amet fermentum est tincidunt aliquet. Maecenas feugiat, tellus vitae consectetur facilisis, augue eros luctus quam, vitae rhoncus dui quam non tortor. Aliquam ullamcorper placerat viverra. Proin pulvinar leo enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis vel leo a dictum. Nullam non lobortis nibh. Aenean enim mi, efficitur et pharetra ac, tristique auctor elit.',
+        ]);
+
+        DB::table('exercise_results')->insert([
+            'exercise_id' => 1,
+            'question' => 'vraag_3',
+            'answer' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit mauris ex, sit amet fermentum est tincidunt aliquet. Maecenas feugiat, tellus vitae consectetur facilisis, augue eros luctus quam, vitae rhoncus dui quam non tortor. Aliquam ullamcorper placerat viverra. Proin pulvinar leo enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis vel leo a dictum. Nullam non lobortis nibh. Aenean enim mi, efficitur et pharetra ac, tristique auctor elit.',
+        ]);
     }
 }

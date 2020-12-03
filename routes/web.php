@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ExerciseController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ExerciseController;
+use App\Http\Controllers\ExerciseResultController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,13 @@ Route::get('/dashboard', function () {
     return view('pages.dashboard');
 })->name('dashboard');
 
-Route::resource('exercises', ExerciseController::class)->only([
+Route::resource('oefeningen', ExerciseController::class)->only([
     'index', 'show'
 ]);
+
+Route::resource('oefeningen.invullen', ExerciseResultController::class);
+
+//<a href="{{ action('App\Http\Controllers\ProjectController@show', [$project->id]) }}">
+//    {{ $project->title }}
+//</a>
 
