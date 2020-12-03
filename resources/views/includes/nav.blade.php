@@ -4,5 +4,7 @@
             {{ $personal ? 'Mijn' : '' }} Toekomstplanner
         </a>
     </span>
-    <img src="assets/icons/outline/menu.svg" alt="Menu icon">
+    <a href="{{ route('menu') }}">
+        <img src="/assets/icons/outline/menu.svg" alt="Menu icon">
+    </a>
 </nav>

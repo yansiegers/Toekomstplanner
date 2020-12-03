@@ -16,8 +16,11 @@ use App\Http\Controllers\ExerciseAssignmentController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [PageController::class, 'show'])->defaults('id', 1)->name('home');
+
+Route::get('/menu', function () {
+    return view('pages.menu');
+})->name('menu');
 
 Route::get('/dashboard', function () {
     return view('pages.dashboard');
