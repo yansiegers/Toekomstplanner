@@ -13,7 +13,7 @@
                 <li>{{ $exercise_intro->created_at }}</li>
             </ul>
         </section>
-        <a class="col-span-4 col-start-2 text-center border" href="{{ route('oefeningen.invullen.index', [1]) }}">Starten</a>
+        <a class="col-span-4 col-start-2 btn btn-primary" href="{{ route('oefeningen.invullen.index', [1]) }}">Starten</a>
 
         <section class="col-start-2 col-span-4">
             <p>{{ $exercise_intro->text }}</p>

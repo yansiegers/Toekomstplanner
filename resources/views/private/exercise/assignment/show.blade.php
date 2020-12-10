@@ -9,7 +9,7 @@
 @section('content')
     <div class="container mx-auto p-5 grid grid-cols-6 gap-y-8">
         <section class="col-span-full">
-            <h1 class="text-xl text-center font-bold mt-5">{{ $page_title }}</h1>
+            <h1 class="mt-5">{{ $page_title }}</h1>
         </section>
 
         <section class="col-span-4 col-start-2">
