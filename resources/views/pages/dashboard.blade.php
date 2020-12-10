@@ -8,7 +8,7 @@
             <h1 class="text-xl text-center font-bold mt-5">Dashboard</h1>
         </section>
 
-        <section class="col-span-full grid grid-cols-3 gap-y-2 mb-16">
+        <section class="col-span-full grid grid-cols-3 gap-y-2 mb-16 items-center">
             <h2 class="font-bold text-center col-span-full">Ga verder waar je gebleven bent</h2>
 
             <span class="font-bold">Mijn jaarplan</span>
@@ -28,7 +28,7 @@
             <a href="{{ action('App\Http\Controllers\ExerciseAssignmentController@index', [1]) }}" class="text-center border">Verder</a>
         </section>
 
-        <section class="col-span-full grid grid-cols-3 gap-y-2 mb-16">
+        <section class="col-span-full grid grid-cols-3 gap-y-2 mb-16 items-center">
             <h2 class="font-bold text-center col-span-full">Tijdlijn</h2>
 
             <span class="font-bold">Roadmap</span>
@@ -46,6 +46,6 @@
             <a href="{{ action('App\Http\Controllers\ExerciseResultController@index', [1]) }}" class="text-center border">Bekijken</a>
         </section>
 
-        <button class="col-span-4 col-start-2 text-center border">Accountinstellingen</button>
+        <a href="#" class="col-span-4 col-start-2 btn btn-tertiary">Accountinstellingen</a>
     </div>
 @stop

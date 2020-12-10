@@ -4,10 +4,10 @@
     <div class="container mx-auto p-5 grid grid-cols-6 gap-y-8">
         <section class="col-span-full">
             <img class="" src="/assets/illustrations/undraw_Questions_re_1fy7.svg" alt="">
-            <h1 class="text-xl text-center font-bold mt-5">{{ $page->title }}</h1>
+            <h1 class="text-xl text-center font-bold mt-5">Plan de toekomst van je studie</h1>
         </section>
 
-        <button class="col-span-4 col-start-2 text-center border">Aanmelden</button>
+        <button class="btn btn-primary col-span-4 col-start-2">Aanmelden</button>
         <p class="col-span-4 col-start-2">Heb je al een account? <a href="/">Log hier in.</a></p>
 
         @foreach ($page_texts as $page_text)
