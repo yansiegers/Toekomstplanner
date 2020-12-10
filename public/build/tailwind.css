@@ -22653,6 +22653,8 @@ a:hover { --text-opacity: 1; color: #84A882; color: rgba(132, 168, 130, var(--te
 .no-link:hover { text-decoration: underline; --text-opacity: 1; color: #151E15; color: rgba(21, 30, 21, var(--text-opacity))
 }
 
+/* Buttons */
+
 .btn {
   font-family: Poppins, sans-serif;
   text-align: center;
@@ -22690,6 +22692,92 @@ a:hover { --text-opacity: 1; color: #84A882; color: rgba(132, 168, 130, var(--te
 
 .btn-tertiary:hover,
     .btn-tertiary:focus{ --bg-opacity: 1; background-color: #F5DAD5; background-color: rgba(245, 218, 213, var(--bg-opacity))
+}
+
+/* Form */
+
+form { display: flex; flex-direction: column
+}
+
+label { font-weight: 700; margin-top: 1rem; margin-bottom: 0.75rem
+}
+
+input::-moz-placeholder, select::-moz-placeholder {
+  --text-opacity: 1;
+  color: #87A2A8;
+  color: rgba(135, 162, 168, var(--text-opacity))
+}
+
+input:-ms-input-placeholder, select:-ms-input-placeholder {
+  --text-opacity: 1;
+  color: #87A2A8;
+  color: rgba(135, 162, 168, var(--text-opacity))
+}
+
+input::placeholder,
+    select::placeholder {
+  --text-opacity: 1;
+  color: #87A2A8;
+  color: rgba(135, 162, 168, var(--text-opacity))
+}
+
+input[type=text],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=time],
+    input[type=url],
+    input[type=week],
+    input[type=range],
+    select,
+    textarea {
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #151E15;
+  border-color: rgba(21, 30, 21, var(--border-opacity));
+  border-radius: 0.375rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
+}
+
+input[type=submit],
+    input[type=reset],
+    input[type=button] {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #151E15;
+  border-color: rgba(21, 30, 21, var(--border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem; --bg-opacity: 1; background-color: #D7F2D5; background-color: rgba(215, 242, 213, var(--bg-opacity))
+}
+
+input[type=submit]:hover,
+    input[type=submit]:focus,
+    input[type=reset]:hover,
+    input[type=reset]:focus,
+    input[type=button]:hover,
+    input[type=button]:focus {
+  /* @apply btn:hover btn:focus
+        btn-primary:hover btn-primary:focus */
+  --text-opacity: 1;
+  color: #151E15;
+  color: rgba(21, 30, 21, var(--text-opacity));
+  --bg-opacity: 1;
+  background-color: #84A882;
+  background-color: rgba(132, 168, 130, var(--bg-opacity))
 }
 
 /* Colors */
