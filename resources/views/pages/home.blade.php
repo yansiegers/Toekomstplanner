@@ -6,7 +6,7 @@
 
         <img class="col-span-full lg:col-start-2 lg:col-span-3 lg:row-span-2" src="/assets/illustrations/undraw_Questions_re_1fy7.svg" alt="">
         <div class="col-span-4 col-start-2 lg:col-span-1">
-            <p class="mb-8"><a class="btn btn-primary" href="#">Aanmelden</a></p>
+            <p class="mb-8"><a class="btn btn-primary block" href="#">Aanmelden</a></p>
             <p class="">Heb je al een account?<br><a href="/">Log hier in.</a></p>
         </div>
 
