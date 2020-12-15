@@ -3,11 +3,14 @@
 ])
 
 @section('content')
-    <div class="container mx-auto p-5 grid grid-cols-6 gap-y-8">
-        <h1 class="col-span-full text-center font-bold">Oefening: {{ $exercise_intro->title }}</h1>
+    <div class="container mx-auto p-5 grid grid-cols-6 gap-8">
+        <h1 class="col-span-full">Oefening: {{ $exercise_intro->title }}</h1>
 
-        <img class="col-span-full lg:col-start-2 lg:col-span-3 lg:row-span-2" src="/assets/images/forest-1245692_1920.jpg" alt="">
-        <ul class="col-span-full lg:col-start-2 lg:col-span-3 lg:row-span-2 flex justify-around">
+        <div class="col-span-full lg:col-span-5 lg:row-span-3">
+            <img class="h-64 w-full object-cover object-middle" src="/assets/images/forest-1245692_1920.jpg" alt="">
+        </div>
+
+        <ul class="col-span-full lg:col-span-1 flex justify-around lg:flex-col lg:space-y-4">
             <li>
                 <img class="inline mr-1" src="/assets/icons/outline/clock.svg" alt="">
                 {{ $exercise_intro->duration }} min.

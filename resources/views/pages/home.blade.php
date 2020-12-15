@@ -1,7 +1,7 @@
 @extends('layouts.general')
 
 @section('content')
-    <div class="container mx-auto p-5 grid grid-cols-6 gap-y-8">
+    <div class="container mx-auto p-5 grid grid-cols-6 gap-8">
         <h1 class="col-span-full text-center font-bold">Plan de toekomst van je studie</h1>
 
         <img class="col-span-full lg:col-start-2 lg:col-span-3 lg:row-span-2" src="/assets/illustrations/undraw_Questions_re_1fy7.svg" alt="">
