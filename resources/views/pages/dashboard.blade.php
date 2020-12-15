@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mx-auto p-5 grid grid-cols-6 gap-y-8">
         <section class="col-span-full">
-            <h1 class="mt-5">Dashboard</h1>
+            <h1 class="">Dashboard</h1>
         </section>
 
         <section class="col-span-full grid grid-cols-3 gap-y-2 mb-16 items-center">

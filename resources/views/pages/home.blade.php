@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="container mx-auto p-5 grid grid-cols-6 gap-y-8">
-        <section class="col-span-full">
-            <img class="center" src="/assets/illustrations/undraw_Questions_re_1fy7.svg" alt="">
-            <h1 class="text-center font-bold mt-5">Plan de toekomst van je studie</h1>
-        </section>
+        <h1 class="col-span-full text-center font-bold">Plan de toekomst van je studie</h1>
 
-        <button class="btn btn-primary col-span-4 col-start-2">Aanmelden</button>
-        <p class="col-span-4 col-start-2">Heb je al een account? <a href="/">Log hier in.</a></p>
+        <img class="col-span-full lg:col-start-2 lg:col-span-3 lg:row-span-2" src="/assets/illustrations/undraw_Questions_re_1fy7.svg" alt="">
+        <div class="col-span-4 col-start-2 lg:col-span-1">
+            <p class="mb-8"><a class="btn btn-primary" href="#">Aanmelden</a></p>
+            <p class="">Heb je al een account?<br><a href="/">Log hier in.</a></p>
+        </div>
 
         @foreach ($page_texts as $page_text)
             <section class="col-span-4 col-start-2">
