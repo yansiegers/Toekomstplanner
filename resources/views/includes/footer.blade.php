@@ -1,4 +1,4 @@
-<footer class="container mx-auto p-5 bg-tp-plants font-sans">
+<footer class="p-5 bg-tp-plants font-sans">
     <div class="grid grid-cols-2">
         <ul>
             <li class="mb-3"><a class="no-link" href="#">© {{ Date('Y') }} Toekomstplanner</a></li>
